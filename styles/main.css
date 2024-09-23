@@ -1,0 +1,51 @@
+body {
+    background-color: gray;
+}
+
+.container {
+    background-color: aliceblue;
+    border: solid 4px black;
+    display: flex;
+    height: 500px;
+    align-items: center; /* Aligns items from top to bottom */
+    justify-content: center; /* Aligns items from left to right */
+}
+
+.container>div {
+    flex: 1;
+    background-color: aqua;
+    height: 100px;
+    margin: 10px;
+    transition: .5s;
+}
+
+.container>div:hover { /* Only applies these when you hover over a div in the top container */
+    background-color: beige;
+    flex: 2.5 /* Makes the flex bigger */
+}
+.container2 {
+    background-color: palegoldenrod;
+    border: solid 4px black;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center; /* Aligns items from top to bottom */
+    justify-content: center; /* Aligns items from left to right */
+}
+.container2>div {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(167, 255, 255);
+}
+#container>div:nth-child(odd) { /* turns every odd div purple */
+    background-color: purple;
+}
+div {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+div::first-letter {
+    color: green;
+}
